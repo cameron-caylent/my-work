@@ -1,0 +1,65 @@
+# Control Tower Research for werk
+
+## Questions
+
++ What is a CFN stack set? Review
+
++ What happens when CT just skips regions that it doesn't support? (see link below). It seems like it just like... only governs the regions it supports and you can run wild anywhere else, which is a blatant reason to never use this product.
+ + https://www.reddit.com/r/aws/comments/ks9a17/aws_control_tower_advice/gifjmj6?utm_source=share&utm_medium=web2x&context=3
+  + Question: Was this changed in the March 23 2021 update?
+    + except this guy didn't know about customizations, does he know what he's talking about?
+    + except I've seen the same point elsewhere and had the same question just reading docs
+      + <insert link to docs> 
++ Is AWS SSO required? (I think so, so no way to use Okta?)
++ Can we write TF with AWS Best Practices?
+  + More research on what the best practices are again
+
+## AWS CT docs
+
+https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html
+
+
+## AWS Customizations for AWS CT Documentation
+
+https://docs.aws.amazon.com/solutions/latest/customizations-for-aws-control-tower/welcome.html
+
+
+## AWS Github aws-control-tower-customizations pipeline code repo
+
+(comes from Customizations for AWS CT docs `deployment` step 2)
+
+https://github.com/awslabs/aws-control-tower-customizations
+
+
+## AWS CT Customization Pipeline Developer's Guide PDF
+
+This is really good and hard to find. It's the official guide for the github aws-control-tower-customizations repo.
+
+https://s3.amazonaws.com/solutions-reference/customizations-for-aws-control-tower/latest/customizations-for-aws-control-tower-developer-guide.pdf
+
+
+## AWS Terraform ...???
+
+This seems like official aws?? much confuse
+
+https://controltower.aws-management.tools/deployment/terraform/
+
+lead me to:
+
+https://github.com/aws-samples/aws-service-catalog-terraform-reference-architecture/
+
+
+## Gruntwork.io TF for AWS Landing Zone (which is deprecated? how old is this?)
+
+https://gruntwork.io/guides/foundations/how-to-configure-production-grade-aws-account-structure/#gruntwork-aws-landing-zone-vs-the-alternatives
+
+
+## superwerker
+
+https://stories.schubergphilis.com/turbo-charge-you-aws-control-tower-44fad7a62f50
+
+https://aws.amazon.com/blogs/mt/customizing-account-configuration-aws-control-tower-lifecycle-events/
+
+https://aws-quickstart.github.io/quickstart-superwerker/
+
+https://github.com/superwerker/superwerker
